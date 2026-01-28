@@ -1,0 +1,23 @@
+{
+  "project_name": "RPA-PORT-Customs-AI",
+  "primary_language": "python",
+  "entrypoints": ["main.py"],
+  "how_to_run": [
+    "Install: pip install -r requirements.txt",
+    "Run locally: uvicorn main:app --reload",
+    "Run tests: pytest tests/",
+    "Docker: docker build -t rpa-port . && docker run -p 8080:8080 rpa-port"
+  ],
+  "purpose": "Deploy to DigitalOcean App Platform - Israeli Customs AI Classification System powered by Anthropic Claude",
+  "important_files": [
+    "main.py",
+    "requirements.txt",
+    "Procfile",
+    "Dockerfile",
+    "README.md",
+    ".github/workflows/deploy.yml"
+  ],
+  "notes_about_secrets": "ANTHROPIC_API_KEY must be set as environment variable in DigitalOcean. Use .env.example as template.",
+  "website": "https://www.rpa-port.com",
+  "contact": "devrpa@rpa-port.co.il"
+}
